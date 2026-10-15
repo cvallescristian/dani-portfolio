@@ -1,0 +1,28 @@
+.projects {
+  padding-block: var(--space-8) var(--space-12);
+}
+
+.projects__heading {
+  font-size: var(--fs-lg);
+  font-weight: 400;
+  margin-bottom: var(--space-6);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding-block: var(--space-12);
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8) var(--space-6);
+  }
+}
