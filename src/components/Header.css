@@ -1,0 +1,15 @@
+.header {
+  background: var(--color-hero-bg);
+  padding-block: var(--space-6);
+}
+
+.header__name {
+  font-size: var(--fs-base);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-block: var(--space-8);
+  }
+}
