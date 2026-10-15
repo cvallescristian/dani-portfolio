@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import { projects } from '../data/projects'
+import type { Project } from '../data/types'
 import ProjectCard from './ProjectCard'
+import ProjectModal from './ProjectModal'
 import './Projects.css'
 
 function Projects() {
+  const [selected, setSelected] = useState<Project | null>(null)
+
   return (
     <section className="projects">
       <div className="container">
@@ -10,11 +15,12 @@ function Projects() {
         <ul className="projects__grid">
           {projects.map((project) => (
             <li key={project.id}>
-              <ProjectCard project={project} />
+              <ProjectCard project={project} onSelect={setSelected} />
             </li>
           ))}
         </ul>
       </div>
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </section>
   )
 }
