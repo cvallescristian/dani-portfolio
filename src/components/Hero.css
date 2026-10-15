@@ -85,3 +85,17 @@
     width: 320px;
   }
 }
+
+.hero__button {
+  transition: opacity 0.2s ease;
+}
+
+.hero__button:active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) {
+  .hero__button:hover {
+    opacity: 0.8;
+  }
+}

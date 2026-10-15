@@ -113,3 +113,26 @@ p {
     scroll-behavior: auto;
   }
 }
+
+:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 10;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}

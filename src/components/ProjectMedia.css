@@ -48,3 +48,17 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.project-media__link {
+  transition: opacity 0.2s ease;
+}
+
+.project-media__link:active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) {
+  .project-media__link:hover {
+    opacity: 0.8;
+  }
+}
