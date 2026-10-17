@@ -52,7 +52,8 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: var(--color-bg);
+  background: var(--color-accent-soft);
+  --underline-color: var(--color-text);
   padding: var(--space-2) var(--container-padding) var(--space-6);
   opacity: 0;
   visibility: hidden;
@@ -97,6 +98,7 @@
     position: static;
     padding: 0;
     background: none;
+    --underline-color: var(--color-accent);
     opacity: 1;
     visibility: visible;
     transform: none;
