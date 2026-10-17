@@ -1,4 +1,4 @@
-import { profile } from '../data/profile'
+import ContactLinks from './ContactLinks'
 import Reveal from './Reveal'
 import './Contact.css'
 
@@ -10,23 +10,7 @@ function Contact() {
         <p className="contact__text">
           Have a project in mind or want to collaborate? Reach out.
         </p>
-        <ul className="contact__links">
-          {profile.contacts.map((contact) => {
-            const isExternal = contact.url.startsWith('http')
-            return (
-              <li key={contact.label}>
-                <a
-                  className="contact__link"
-                  href={contact.url}
-                  target={isExternal ? '_blank' : undefined}
-                  rel={isExternal ? 'noopener noreferrer' : undefined}
-                >
-                  {contact.label}
-                </a>
-              </li>
-            )
-          })}
-        </ul>
+        <ContactLinks />
       </Reveal>
     </section>
   )

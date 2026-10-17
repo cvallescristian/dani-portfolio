@@ -1,5 +1,5 @@
-import { Link } from 'react-router'
 import { profile } from '../data/profile'
+import ContactLinks from './ContactLinks'
 import Reveal from './Reveal'
 import './Hero.css'
 
@@ -25,9 +25,7 @@ function Hero() {
         </Reveal>
         <Reveal className="hero__content" delay={300}>
           <p className="hero__tagline">{profile.tagline}</p>
-          <Link className="hero__button" to="/contact">
-            Let's connect
-          </Link>
+          <ContactLinks centered />
         </Reveal>
       </div>
     </section>
