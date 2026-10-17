@@ -40,6 +40,7 @@
   min-height: var(--tap-target);
   padding-inline: var(--space-6);
   border-radius: var(--radius-pill);
+  border: 1px solid var(--color-button-bg);
   background: var(--color-button-bg);
   color: var(--color-button-text);
   font-size: var(--fs-xs);
@@ -51,18 +52,21 @@
 
 .project-media__link {
   transition:
-    opacity var(--duration-fast) var(--ease-out),
+    background-color var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out),
     transform var(--duration-fast) var(--ease-out);
 }
 
 .project-media__link:active {
-  opacity: 0.7;
+  background: var(--color-accent);
+  color: var(--color-text);
   transform: translateY(0);
 }
 
 @media (hover: hover) {
   .project-media__link:hover {
-    opacity: 0.85;
+    background: var(--color-accent);
+    color: var(--color-text);
     transform: translateY(-2px);
   }
 }
