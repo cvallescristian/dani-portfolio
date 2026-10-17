@@ -26,12 +26,22 @@ function KeywordRotator({ words }: KeywordRotatorProps) {
   }, [words.length])
 
   // The pill width follows the active word, so it is measured from the DOM.
+  // ResizeObserver re-measures when the web font loads or the viewport changes the font size.
   useLayoutEffect(() => {
     const container = containerRef.current
     const word = wordRefs.current[index]
     if (!container || !word) return
-    const padding = parseFloat(getComputedStyle(container).paddingLeft) * 2
-    container.style.width = `${word.offsetWidth + padding}px`
+
+    function measure() {
+      if (!container || !word) return
+      const padding = parseFloat(getComputedStyle(container).paddingLeft) * 2
+      container.style.width = `${word.offsetWidth + padding}px`
+    }
+
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(word)
+    return () => observer.disconnect()
   }, [index])
 
   function wordClass(i: number) {
