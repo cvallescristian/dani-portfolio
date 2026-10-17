@@ -6,6 +6,7 @@ export const profile: Profile = {
     'Brand strategist, social media manager and content creator crafting campaigns that drive growth.',
   bio: 'Check out a few of my favorite projects below!',
   photo: null,
+  heroImages: [null, null],
   contacts: [
     { label: 'Email', url: 'mailto:hello@example.com' },
     { label: 'Instagram', url: 'https://instagram.com/' },

@@ -8,6 +8,7 @@ export type Profile = {
   tagline: string
   bio: string
   photo: string | null
+  heroImages: [string | null, string | null]
   contacts: Contact[]
 }
 

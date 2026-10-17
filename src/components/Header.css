@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 20;
-  background: var(--color-hero-bg);
+  background: var(--color-bg);
   padding-block: var(--space-4);
 }
 
@@ -52,7 +52,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: var(--color-hero-bg);
+  background: var(--color-bg);
   padding: var(--space-2) var(--container-padding) var(--space-6);
   opacity: 0;
   visibility: hidden;
