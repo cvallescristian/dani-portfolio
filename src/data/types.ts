@@ -3,6 +3,11 @@ export type Contact = {
   url: string
 }
 
+export type Photo = {
+  src: string
+  alt: string
+}
+
 export type Profile = {
   name: string
   headline: {
@@ -11,7 +16,7 @@ export type Profile = {
   }
   bio: string
   photo: string | null
-  heroImages: [string | null, string | null]
+  heroImages: [Photo | null, Photo | null]
   about: string[]
   services: string[]
   contacts: Contact[]
