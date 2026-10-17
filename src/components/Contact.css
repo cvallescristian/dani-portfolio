@@ -1,5 +1,5 @@
 .contact {
-  background: var(--color-hero-bg);
+  background: var(--color-accent);
   padding-block: var(--space-12);
 }
 
@@ -11,6 +11,6 @@
 
 .contact__text {
   font-size: var(--fs-sm);
-  color: var(--color-text-muted);
+  color: var(--color-text-on-accent);
   margin-bottom: var(--space-6);
 }
