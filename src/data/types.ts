@@ -9,6 +9,8 @@ export type Profile = {
   bio: string
   photo: string | null
   heroImages: [string | null, string | null]
+  about: string[]
+  services: string[]
   contacts: Contact[]
 }
 
@@ -27,4 +29,13 @@ export type Project = {
   thumbnail: string | null
   description: string
   media: ProjectMedia | null
+}
+
+export type Post = {
+  id: string
+  title: string
+  date: string
+  excerpt: string
+  thumbnail: string | null
+  url: string
 }

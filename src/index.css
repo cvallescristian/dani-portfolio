@@ -197,6 +197,14 @@ p {
   }
 }
 
-.placeholder-page {
-  padding-block: var(--space-12);
+.page-section {
+  padding-block: var(--space-8) var(--space-12);
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 12vw, 6rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: var(--space-8);
 }
