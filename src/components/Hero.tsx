@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { profile } from '../data/profile'
 import Reveal from './Reveal'
 import './Hero.css'
@@ -15,9 +16,9 @@ function Hero() {
           <div className="hero__content">
             <h1 className="hero__tagline">{profile.tagline}</h1>
             <p className="hero__bio">{profile.bio}</p>
-            <a className="hero__button" href="#contact">
+            <Link className="hero__button" to="/contact">
               Let's connect
-            </a>
+            </Link>
           </div>
         </div>
       </Reveal>

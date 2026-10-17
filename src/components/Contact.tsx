@@ -28,11 +28,6 @@ function Contact() {
           })}
         </ul>
       </Reveal>
-      <footer className="contact__footer">
-        <div className="container">
-          © {new Date().getFullYear()} {profile.name}
-        </div>
-      </footer>
     </section>
   )
 }

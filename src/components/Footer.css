@@ -1,0 +1,5 @@
+.footer {
+  padding-block: var(--space-6);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}

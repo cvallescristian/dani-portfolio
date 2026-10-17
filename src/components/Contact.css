@@ -1,7 +1,6 @@
 .contact {
   background: var(--color-hero-bg);
-  padding-top: var(--space-12);
-  scroll-margin-top: 0;
+  padding-block: var(--space-12);
 }
 
 .contact__heading {
@@ -38,13 +37,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.contact__footer {
-  margin-top: var(--space-12);
-  padding-block: var(--space-6);
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
 }
 
 @media (min-width: 768px) {

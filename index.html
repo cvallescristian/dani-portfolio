@@ -12,6 +12,21 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dani | Portfolio" />
     <meta property="og:description" content="Brand strategist, social media manager and content creator. Selected projects." />
+    <script>
+      // GitHub Pages SPA redirect: restores the path encoded by public/404.html
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
     <title>Dani | Portfolio</title>
   </head>
   <body>

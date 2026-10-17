@@ -1,15 +1,115 @@
 .header {
+  position: relative;
+  z-index: 20;
   background: var(--color-hero-bg);
-  padding-block: var(--space-6);
+  padding-block: var(--space-4);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__name {
   font-size: var(--fs-base);
   font-weight: 500;
+  text-decoration: none;
+}
+
+.header__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: var(--tap-target);
+  height: var(--tap-target);
+  margin-right: calc(var(--space-3) * -1);
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.header__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.header__toggle.is-open span:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.header__toggle.is-open span:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-hero-bg);
+  padding: var(--space-2) var(--container-padding) var(--space-6);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition:
+    opacity var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out),
+    visibility var(--duration-base);
+}
+
+.header__nav.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.header__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  font-size: var(--fs-lg);
 }
 
 @media (min-width: 768px) {
   .header {
-    padding-block: var(--space-8);
+    padding-block: var(--space-6);
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    padding: 0;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .header__links {
+    flex-direction: row;
+    gap: var(--space-8);
+  }
+
+  .header__link {
+    min-height: auto;
+    font-size: var(--fs-sm);
   }
 }
