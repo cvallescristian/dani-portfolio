@@ -1,0 +1,32 @@
+.keyword-rotator {
+  display: inline-grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  height: 1.3em;
+  padding-inline: 0.3em;
+  overflow: hidden;
+  border-radius: 0.25em;
+  background: var(--color-accent);
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width var(--duration-slow) var(--ease-out);
+}
+
+.keyword-rotator__word {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: translateY(110%);
+  transition:
+    transform var(--duration-slow) var(--ease-out),
+    opacity var(--duration-slow) var(--ease-out);
+}
+
+.keyword-rotator__word.is-active {
+  opacity: 1;
+  transform: none;
+}
+
+.keyword-rotator__word.is-leaving {
+  opacity: 0;
+  transform: translateY(-110%);
+}

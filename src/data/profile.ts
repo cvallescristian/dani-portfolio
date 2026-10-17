@@ -1,9 +1,11 @@
 import type { Profile } from './types'
 
 export const profile: Profile = {
-  name: 'Dani',
-  tagline:
-    'Brand strategist, social media manager and content creator crafting campaigns that drive growth.',
+  name: 'Daniela',
+  headline: {
+    intro: 'Digital marketing through',
+    keywords: ['strategy', 'content', 'storytelling', 'data', 'campaigns'],
+  },
   bio: 'Check out a few of my favorite projects below!',
   photo: null,
   heroImages: [null, null],

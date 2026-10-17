@@ -1,5 +1,6 @@
 import { profile } from '../data/profile'
 import ContactLinks from './ContactLinks'
+import KeywordRotator from './KeywordRotator'
 import Reveal from './Reveal'
 import './Hero.css'
 
@@ -17,14 +18,16 @@ function Hero() {
     <section className="hero">
       <div className="container">
         <Reveal>
-          <h1 className="hero__title">Portfolio</h1>
+          <h1 className="hero__title">{profile.name}</h1>
         </Reveal>
         <Reveal className="hero__images" delay={150}>
           <HeroImage src={mainImage} className="hero__image--main" />
           <HeroImage src={sideImage} className="hero__image--side" />
         </Reveal>
         <Reveal className="hero__content" delay={300}>
-          <p className="hero__tagline">{profile.tagline}</p>
+          <p className="hero__headline">
+            {profile.headline.intro} <KeywordRotator words={profile.headline.keywords} />
+          </p>
           <ContactLinks centered />
         </Reveal>
       </div>

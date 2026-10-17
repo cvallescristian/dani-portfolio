@@ -5,7 +5,10 @@ export type Contact = {
 
 export type Profile = {
   name: string
-  tagline: string
+  headline: {
+    intro: string
+    keywords: string[]
+  }
   bio: string
   photo: string | null
   heroImages: [string | null, string | null]
