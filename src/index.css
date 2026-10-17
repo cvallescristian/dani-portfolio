@@ -1,13 +1,14 @@
 :root {
   --color-bg: #ffffff;
-  --color-hero-bg: #e3e3e3;
+  --color-hero-bg: #e6e6e6;
   --color-text: #111111;
-  --color-text-muted: #555555;
+  --color-text-muted: #737373;
+  --color-accent: #cfe3f5;
   --color-placeholder: #c8c8c8;
   --color-button-bg: #111111;
   --color-button-text: #ffffff;
 
-  --font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
