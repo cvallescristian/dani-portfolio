@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router'
-import { profile } from '../data/profile'
+import { NavLink } from 'react-router'
 import './Header.css'
 
 const links = [
@@ -16,9 +15,6 @@ function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <Link className="header__name" to="/" onClick={() => setIsOpen(false)}>
-          {profile.name}
-        </Link>
         <button
           type="button"
           className={`header__toggle ${isOpen ? 'is-open' : ''}`}
