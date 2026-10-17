@@ -42,11 +42,6 @@ body:has(.project-modal[open]) {
   font-weight: 500;
 }
 
-.project-modal__tags {
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
-}
-
 .project-modal__media {
   margin-top: var(--space-4);
 }

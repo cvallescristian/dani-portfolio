@@ -26,7 +26,13 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
         )}
       </div>
       <h3 className="project-card__title">{project.title}</h3>
-      <p className="project-card__tags">{project.tags.join(' • ')}</p>
+      <span className="tags">
+        {project.tags.map((tag) => (
+          <span key={tag} className="tag">
+            {tag}
+          </span>
+        ))}
+      </span>
     </button>
   )
 }

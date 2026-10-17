@@ -51,7 +51,13 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
           <h2 id="project-modal-title" className="project-modal__title">
             {project.title}
           </h2>
-          <p className="project-modal__tags">{project.tags.join(' • ')}</p>
+          <ul className="tags">
+            {project.tags.map((tag) => (
+              <li key={tag} className="tag">
+                {tag}
+              </li>
+            ))}
+          </ul>
           <p className="project-modal__description">{project.description}</p>
           {project.media && (
             <div className="project-modal__media">

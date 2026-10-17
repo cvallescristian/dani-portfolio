@@ -30,11 +30,6 @@
   font-weight: 500;
 }
 
-.project-card__tags {
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
-}
-
 .project-card__thumb {
   transition:
     transform var(--duration-slow) var(--ease-out),
