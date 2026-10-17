@@ -1,10 +1,11 @@
 import { profile } from '../data/profile'
+import Reveal from './Reveal'
 import './Contact.css'
 
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <div className="container">
+      <Reveal className="container">
         <h2 className="contact__heading">Let's connect</h2>
         <p className="contact__text">
           Have a project in mind or want to collaborate? Reach out.
@@ -26,7 +27,7 @@ function Contact() {
             )
           })}
         </ul>
-      </div>
+      </Reveal>
       <footer className="contact__footer">
         <div className="container">
           © {new Date().getFullYear()} {profile.name}

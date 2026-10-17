@@ -50,15 +50,19 @@
 }
 
 .project-media__link {
-  transition: opacity 0.2s ease;
+  transition:
+    opacity var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
 }
 
 .project-media__link:active {
   opacity: 0.7;
+  transform: translateY(0);
 }
 
 @media (hover: hover) {
   .project-media__link:hover {
-    opacity: 0.8;
+    opacity: 0.85;
+    transform: translateY(-2px);
   }
 }

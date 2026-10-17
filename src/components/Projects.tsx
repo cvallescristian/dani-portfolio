@@ -3,6 +3,7 @@ import { projects } from '../data/projects'
 import type { Project } from '../data/types'
 import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
+import Reveal from './Reveal'
 import './Projects.css'
 
 function Projects() {
@@ -13,9 +14,11 @@ function Projects() {
       <div className="container">
         <h2 className="projects__heading">Top projects</h2>
         <ul className="projects__grid">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <li key={project.id}>
-              <ProjectCard project={project} onSelect={setSelected} />
+              <Reveal delay={(index % 3) * 100}>
+                <ProjectCard project={project} onSelect={setSelected} />
+              </Reveal>
             </li>
           ))}
         </ul>

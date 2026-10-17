@@ -10,11 +10,15 @@
   text-align: left;
 }
 
+.project-card__media {
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
 .project-card__thumb {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  margin-bottom: var(--space-2);
 }
 
 .project-card__thumb--placeholder {
@@ -32,7 +36,9 @@
 }
 
 .project-card__thumb {
-  transition: opacity 0.2s ease;
+  transition:
+    transform var(--duration-slow) var(--ease-out),
+    opacity var(--duration-fast) var(--ease-out);
 }
 
 .project-card:active .project-card__thumb {
@@ -41,6 +47,6 @@
 
 @media (hover: hover) {
   .project-card:hover .project-card__thumb {
-    opacity: 0.85;
+    transform: scale(1.03);
   }
 }

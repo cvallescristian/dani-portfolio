@@ -61,3 +61,24 @@ body:has(.project-modal[open]) {
     border-radius: var(--space-2);
   }
 }
+
+.project-modal[open] {
+  animation: modal-in var(--duration-base) var(--ease-out);
+}
+
+.project-modal[open]::backdrop {
+  animation: backdrop-in var(--duration-base) var(--ease-out);
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
