@@ -45,6 +45,39 @@
   font-size: var(--fs-sm);
 }
 
+.about__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+.about__entry {
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-accent);
+}
+
+.about__entry-title {
+  font-size: var(--fs-base);
+  font-weight: 500;
+}
+
+.about__entry-meta {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.about__entry-text {
+  margin-top: var(--space-1);
+  font-size: var(--fs-sm);
+}
+
+.about__tools {
+  margin-bottom: var(--space-4);
+  font-size: var(--fs-sm);
+}
+
 @media (min-width: 768px) {
   .about__layout {
     grid-template-columns: 2fr 3fr;

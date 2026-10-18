@@ -8,6 +8,20 @@ export type Photo = {
   alt: string
 }
 
+export type Experience = {
+  role: string
+  company: string
+  dates: string
+  location: string
+  highlight: string
+}
+
+export type Education = {
+  title: string
+  school: string
+  dates: string
+}
+
 export type Profile = {
   name: string
   headline: {
@@ -19,6 +33,9 @@ export type Profile = {
   heroImages: [Photo | null, Photo | null]
   about: string[]
   services: string[]
+  experience: Experience[]
+  education: Education[]
+  tools: string[]
   contacts: Contact[]
 }
 
