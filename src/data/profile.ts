@@ -85,8 +85,12 @@ export const profile: Profile = {
     { name: 'AI tools', use: 'Ideas, copy & research', icon: 'ai' },
   ],
   contacts: [
-    { label: 'Email', url: 'mailto:danielaiprzs@gmail.com' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/danielaips/' },
-    { label: 'Download CV', url: `${import.meta.env.BASE_URL}Daniela-Perez-Sanchez-CV.pdf` },
+    { label: 'Email', url: 'mailto:danielaiprzs@gmail.com', icon: 'mail' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/danielaips/', icon: 'linkedin' },
+    {
+      label: 'Download CV',
+      url: `${import.meta.env.BASE_URL}Daniela-Perez-Sanchez-CV.pdf`,
+      icon: 'download',
+    },
   ],
 }

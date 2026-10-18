@@ -1,4 +1,5 @@
 import type { ProjectMedia as Media } from '../data/types'
+import ButtonIcon from './ButtonIcon'
 import './ProjectMedia.css'
 
 type ProjectMediaProps = {
@@ -61,6 +62,7 @@ function ProjectMedia({ media, title }: ProjectMediaProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <ButtonIcon name="external" />
           View project
         </a>
       )

@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import ButtonIcon from './ButtonIcon'
 import './ContactLinks.css'
 
 type ContactLinksProps = {
@@ -18,6 +19,7 @@ function ContactLinks({ centered = false }: ContactLinksProps) {
               target={opensNewTab ? '_blank' : undefined}
               rel={opensNewTab ? 'noopener noreferrer' : undefined}
             >
+              <ButtonIcon name={contact.icon} />
               {contact.label}
             </a>
           </li>

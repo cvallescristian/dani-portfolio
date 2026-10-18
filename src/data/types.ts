@@ -1,6 +1,9 @@
+export type ButtonIconName = 'mail' | 'linkedin' | 'download' | 'external'
+
 export type Contact = {
   label: string
   url: string
+  icon: ButtonIconName
 }
 
 export type Photo = {
