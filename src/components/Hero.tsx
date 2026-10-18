@@ -27,7 +27,8 @@ function Hero() {
         </Reveal>
         <Reveal className="hero__content" delay={300}>
           <p className="hero__headline">
-            {profile.headline.intro} <KeywordRotator words={profile.headline.keywords} />
+            {profile.headline.intro} <br className="hero__headline-break" />
+            <KeywordRotator words={profile.headline.keywords} />
           </p>
           <ContactLinks centered />
         </Reveal>
