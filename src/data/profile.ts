@@ -30,6 +30,6 @@ export const profile: Profile = {
   contacts: [
     { label: 'Email', url: 'mailto:danielaiprzs@gmail.com' },
     { label: 'Instagram', url: 'https://instagram.com/' },
-    { label: 'LinkedIn', url: 'https://linkedin.com/' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/danielaips/' },
   ],
 }
