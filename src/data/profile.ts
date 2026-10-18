@@ -79,5 +79,6 @@ export const profile: Profile = {
   contacts: [
     { label: 'Email', url: 'mailto:danielaiprzs@gmail.com' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/danielaips/' },
+    { label: 'Download CV', url: `${import.meta.env.BASE_URL}Daniela-Perez-Sanchez-CV.pdf` },
   ],
 }

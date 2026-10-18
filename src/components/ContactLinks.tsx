@@ -9,14 +9,14 @@ function ContactLinks({ centered = false }: ContactLinksProps) {
   return (
     <ul className={`contact-links ${centered ? 'contact-links--centered' : ''}`}>
       {profile.contacts.map((contact) => {
-        const isExternal = contact.url.startsWith('http')
+        const opensNewTab = !contact.url.startsWith('mailto:')
         return (
           <li key={contact.label}>
             <a
               className="contact-links__link"
               href={contact.url}
-              target={isExternal ? '_blank' : undefined}
-              rel={isExternal ? 'noopener noreferrer' : undefined}
+              target={opensNewTab ? '_blank' : undefined}
+              rel={opensNewTab ? 'noopener noreferrer' : undefined}
             >
               {contact.label}
             </a>
