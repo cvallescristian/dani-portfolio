@@ -36,9 +36,9 @@
 
 .hero__image--side {
   justify-self: end;
-  width: 62%;
-  aspect-ratio: 3 / 5;
-  margin-top: 25%;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  margin-top: 50%;
 }
 
 .hero__content {
@@ -69,8 +69,8 @@
 
   .hero__image--side {
     justify-self: center;
-    width: 50%;
-    margin-top: 15%;
+    width: 90%;
+    margin-top: 25%;
   }
 
   .hero__content {

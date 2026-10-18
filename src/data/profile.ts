@@ -12,7 +12,7 @@ export const profile: Profile = {
   photo: null,
   heroImages: [
     { src: heroMain, alt: 'Portrait of Daniela by the sea' },
-    { src: heroSide, alt: 'Daniela standing on the rocks by the sea' },
+    { src: heroSide, alt: 'Daniela taking a photo with her phone' },
   ],
   about: [
     'Placeholder bio. A short introduction about who Dani is, where she is based and what drives her work.',
