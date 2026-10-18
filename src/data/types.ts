@@ -22,6 +22,14 @@ export type Education = {
   dates: string
 }
 
+export type Tool = {
+  name: string
+  use: string
+  initials: string
+  color: string
+  textColor: string
+}
+
 export type Profile = {
   name: string
   headline: {
@@ -35,7 +43,7 @@ export type Profile = {
   services: string[]
   experience: Experience[]
   education: Education[]
-  tools: string[]
+  tools: Tool[]
   contacts: Contact[]
 }
 

@@ -56,7 +56,23 @@ function AboutPage() {
           </ul>
 
           <h2 className="about__subheading">Tools</h2>
-          <p className="about__tools">{profile.tools.join(' · ')}</p>
+          <ul className="about__tools">
+            {profile.tools.map((tool) => (
+              <li key={tool.name} className="tool-card">
+                <span
+                  className="tool-card__badge"
+                  style={{ background: tool.color, color: tool.textColor }}
+                  aria-hidden="true"
+                >
+                  {tool.initials}
+                </span>
+                <span className="tool-card__text">
+                  <span className="tool-card__name">{tool.name}</span>
+                  <span className="tool-card__use">{tool.use}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
           <ContactLinks />
         </Reveal>
       </div>
