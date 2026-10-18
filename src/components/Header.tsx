@@ -3,7 +3,7 @@ import { NavLink } from 'react-router'
 import './Header.css'
 
 const links = [
-  { to: '/', label: 'Projects' },
+  { to: '/', label: 'Home' },
   { to: '/about', label: 'About me' },
   // Hidden for now; the pages still exist at their URLs.
   // { to: '/blog', label: 'Blog' },

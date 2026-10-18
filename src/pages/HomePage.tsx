@@ -1,11 +1,11 @@
 import Hero from '../components/Hero'
-import Projects from '../components/Projects'
+// Projects grid hidden for now: import Projects from '../components/Projects'
 
 function HomePage() {
   return (
     <>
       <Hero />
-      <Projects />
+      {/* <Projects /> */}
     </>
   )
 }
