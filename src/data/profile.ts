@@ -28,7 +28,7 @@ export const profile: Profile = {
     'Project Management',
   ],
   contacts: [
-    { label: 'Email', url: 'mailto:hello@example.com' },
+    { label: 'Email', url: 'mailto:danielaiprzs@gmail.com' },
     { label: 'Instagram', url: 'https://instagram.com/' },
     { label: 'LinkedIn', url: 'https://linkedin.com/' },
   ],
