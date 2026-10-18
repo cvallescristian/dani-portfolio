@@ -5,8 +5,9 @@ import './Header.css'
 const links = [
   { to: '/', label: 'Projects' },
   { to: '/about', label: 'About me' },
-  { to: '/blog', label: 'Blog' },
-  { to: '/contact', label: 'Contact' },
+  // Hidden for now; the pages still exist at their URLs.
+  // { to: '/blog', label: 'Blog' },
+  // { to: '/contact', label: 'Contact' },
 ]
 
 function Header() {
