@@ -1,6 +1,7 @@
 import { profile } from '../data/profile'
 import ContactLinks from '../components/ContactLinks'
 import Reveal from '../components/Reveal'
+import ToolIcon from '../components/ToolIcon'
 import './AboutPage.css'
 
 function AboutPage() {
@@ -59,12 +60,8 @@ function AboutPage() {
           <ul className="about__tools">
             {profile.tools.map((tool) => (
               <li key={tool.name} className="tool-card">
-                <span
-                  className="tool-card__badge"
-                  style={{ background: tool.color, color: tool.textColor }}
-                  aria-hidden="true"
-                >
-                  {tool.initials}
+                <span className="tool-card__badge">
+                  <ToolIcon name={tool.icon} />
                 </span>
                 <span className="tool-card__text">
                   <span className="tool-card__name">{tool.name}</span>

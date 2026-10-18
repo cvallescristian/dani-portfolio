@@ -22,12 +22,12 @@ export type Education = {
   dates: string
 }
 
+export type ToolIconName = 'design' | 'video' | 'photo' | 'ads' | 'analytics' | 'website' | 'ai'
+
 export type Tool = {
   name: string
   use: string
-  initials: string
-  color: string
-  textColor: string
+  icon: ToolIconName
 }
 
 export type Profile = {
