@@ -18,10 +18,10 @@ export const profile: Profile = {
   aboutLead: 'Journalist turned digital marketer, based in Auckland.',
   aboutSub: 'Completing a Postgraduate Diploma in Applied Business (Digital Marketing) at Unitec.',
   stats: [
-    { value: '+60%', label: 'Instagram reach in 10 weeks' },
-    { value: '+123%', label: 'Views in 10 weeks' },
-    { value: '+90%', label: 'Social engagement year on year' },
-    { value: '450+', label: 'Employees reached by internal comms' },
+    { value: '+60%', label: 'Instagram reach in 10 weeks', source: 'Hiraya Studio (internship)' },
+    { value: '+123%', label: 'Views in 10 weeks', source: 'Hiraya Studio (internship)' },
+    { value: '+90%', label: 'Social engagement year on year', source: 'SM Group' },
+    { value: '450+', label: 'Employees reached by internal comms', source: 'Metrogas' },
   ],
   // ==text== is rendered with a light blue marker highlight.
   about: [

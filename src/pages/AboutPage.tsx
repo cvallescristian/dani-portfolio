@@ -42,6 +42,7 @@ function AboutPage() {
               <li key={stat.label} className="about__stat">
                 <span className="about__stat-value">{stat.value}</span>
                 <span className="about__stat-label">{stat.label}</span>
+                <span className="about__stat-source">{stat.source}</span>
               </li>
             ))}
           </ul>

@@ -33,6 +33,7 @@ export type Tool = {
 export type Stat = {
   value: string
   label: string
+  source: string
 }
 
 export type Profile = {
