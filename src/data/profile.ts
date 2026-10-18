@@ -14,11 +14,19 @@ export const profile: Profile = {
     { src: heroMain, alt: 'Portrait of Daniela by the sea' },
     { src: heroSide, alt: 'Daniela taking a photo with her phone' },
   ],
+  availability: 'Available part-time now · full-time from graduation',
+  aboutLead: 'Journalist turned digital marketer, based in Auckland.',
+  aboutSub: 'Completing a Postgraduate Diploma in Applied Business (Digital Marketing) at Unitec.',
+  stats: [
+    { value: '+60%', label: 'Instagram reach in 10 weeks' },
+    { value: '+123%', label: 'Views in 10 weeks' },
+    { value: '+90%', label: 'Social engagement year on year' },
+    { value: '450+', label: 'Employees reached by internal comms' },
+  ],
+  // ==text== is rendered with a light blue marker highlight.
   about: [
-    "I'm a journalist and communications professional based in Auckland, New Zealand, currently completing a Postgraduate Diploma in Applied Business (Digital Marketing) at Unitec.",
-    "Since 2018 I've led external and internal communications in Chile, growing social media engagement by more than 90% year on year and improving employee satisfaction with internal communications by 40% across 450+ employees.",
-    'Most recently at Hiraya Studio, I grew Instagram reach by 60% and views by 123% in 10 weeks for a boutique Pilates studio. I love combining storytelling with data-driven strategy.',
-    "I'm available part-time now and full-time from graduation, and looking for a long-term team to grow with.",
+    "Since 2018 I've led communications in Chile for a publishing group, a non-profit and the country's largest natural gas company, from social media and SEO content to newsletters, events and a new intranet.",
+    'Now in Auckland, I plan content calendars, create reels and run Meta Ads campaigns, combining ==storytelling== with ==data-driven strategy==.',
   ],
   services: [
     'Content Strategy',

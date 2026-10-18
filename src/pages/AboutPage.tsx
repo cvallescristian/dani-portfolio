@@ -4,6 +4,13 @@ import Reveal from '../components/Reveal'
 import ToolIcon from '../components/ToolIcon'
 import './AboutPage.css'
 
+function renderHighlights(text: string) {
+  return text.split(/==(.+?)==/).map((part, i) => {
+    if (i % 2 === 1) return <mark key={i}>{part}</mark>
+    return part
+  })
+}
+
 function AboutPage() {
   return (
     <section className="container page-section">
@@ -11,7 +18,7 @@ function AboutPage() {
         <h1 className="page-title">About me</h1>
       </Reveal>
       <div className="about__layout">
-        <Reveal delay={100}>
+        <Reveal className="about__photo-wrap" delay={100}>
           {profile.photo ? (
             <img className="about__photo" src={profile.photo} alt={profile.name} />
           ) : (
@@ -19,9 +26,23 @@ function AboutPage() {
           )}
         </Reveal>
         <Reveal className="about__content" delay={200}>
+          <p className="about__status">
+            <span className="about__status-dot" aria-hidden="true" />
+            {profile.availability}
+          </p>
+          <p className="about__lead">{profile.aboutLead}</p>
+          <p className="about__sub">{profile.aboutSub}</p>
+          <ul className="about__stats">
+            {profile.stats.map((stat) => (
+              <li key={stat.label} className="about__stat">
+                <span className="about__stat-value">{stat.value}</span>
+                <span className="about__stat-label">{stat.label}</span>
+              </li>
+            ))}
+          </ul>
           {profile.about.map((paragraph) => (
             <p key={paragraph} className="about__paragraph">
-              {paragraph}
+              {renderHighlights(paragraph)}
             </p>
           ))}
           <h2 className="about__subheading">What I do</h2>

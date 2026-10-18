@@ -30,6 +30,11 @@ export type Tool = {
   icon: ToolIconName
 }
 
+export type Stat = {
+  value: string
+  label: string
+}
+
 export type Profile = {
   name: string
   headline: {
@@ -39,6 +44,10 @@ export type Profile = {
   bio: string
   photo: string | null
   heroImages: [Photo | null, Photo | null]
+  availability: string
+  aboutLead: string
+  aboutSub: string
+  stats: Stat[]
   about: string[]
   services: string[]
   experience: Experience[]
