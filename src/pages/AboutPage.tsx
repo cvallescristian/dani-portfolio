@@ -32,6 +32,11 @@ function AboutPage() {
           </p>
           <p className="about__lead">{profile.aboutLead}</p>
           <p className="about__sub">{profile.aboutSub}</p>
+          {profile.about.map((paragraph) => (
+            <p key={paragraph} className="about__paragraph">
+              {renderHighlights(paragraph)}
+            </p>
+          ))}
           <ul className="about__stats">
             {profile.stats.map((stat) => (
               <li key={stat.label} className="about__stat">
@@ -40,11 +45,6 @@ function AboutPage() {
               </li>
             ))}
           </ul>
-          {profile.about.map((paragraph) => (
-            <p key={paragraph} className="about__paragraph">
-              {renderHighlights(paragraph)}
-            </p>
-          ))}
           <h2 className="about__subheading">What I do</h2>
           <ul className="about__services">
             {profile.services.map((service) => (
